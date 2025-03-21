@@ -37,10 +37,11 @@ jobs:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
         run: |
-          npm run start
-          npm install
-          npm audit fix
-          npm quickstart
+          echo "Installing node dependencies..."
+          npm i
+
+          echo "Building..."
+          npm run build
 
 # Please do not touch the following action
       - name: Store deployment content
