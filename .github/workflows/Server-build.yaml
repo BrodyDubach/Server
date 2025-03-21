@@ -40,7 +40,7 @@ jobs:
           echo "Installing node dependencies..."
           npm i
           echo "Building..."
-          npm run build
+          npm run quickstart
           npm audit fix --force
 
 # Please do not touch the following action
