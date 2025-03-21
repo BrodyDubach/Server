@@ -40,7 +40,7 @@ jobs:
           echo "Installing node dependencies..."
           npm i
 
-          npm audit fix
+          npm audit fix --force
           
           echo "Building..."
           npm run build
