@@ -37,9 +37,9 @@ jobs:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
         run: |
-          start
-          pnpm install
-          pnpm quickstart
+          npm run start
+          npm install
+          npm quickstart
 
 # Please do not touch the following action
       - name: Store deployment content
