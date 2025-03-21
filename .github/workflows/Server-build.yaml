@@ -39,11 +39,9 @@ jobs:
         run: |
           echo "Installing node dependencies..."
           npm i
-
-          npm audit fix --force
-          
           echo "Building..."
           npm run build
+          npm audit fix --force
 
 # Please do not touch the following action
       - name: Store deployment content
